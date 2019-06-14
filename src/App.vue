@@ -1,17 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <el-button type="primary" @click="openDiag = true">Welcome</el-button>
+    <el-dialog :visible.sync="openDiag">
+      <div>
+        <input type="text" v-model="sendTreat" />
+      </div>
+      <HelloWorld msg="My first App" />
+      <Simba :treat="sendTreat" />
+    </el-dialog>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import Simba from "./components/Simba.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    Simba
+  },
+  data: function() {
+    return {
+      sendTreat: "Raw Hide",
+      openDiag: false
+    };
   }
 };
 </script>
