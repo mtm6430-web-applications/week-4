@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "staging": "udemy-http-tutorial-aea91"
+  },
+  "targets": {
+    "udemy-http-tutorial-aea91": {
+      "hosting": {
+        "week4-test": [
+          "mtm6430-week-4-test"
+        ]
+      }
+    }
+  }
+}
