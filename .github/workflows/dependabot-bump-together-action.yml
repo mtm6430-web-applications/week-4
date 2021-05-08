@@ -1,0 +1,21 @@
+- name: dependabot-bump-together-action
+  # You may pin to the exact commit or the version.
+  # uses: marcoroth/dependabot-bump-together-action@ab726ae3405ac60706b35fd8659da2ed009383b6
+  uses: marcoroth/dependabot-bump-together-action@v0.2.0
+  with:
+    # Comma-separated list of the dependencies dependabot should bump together
+    dependencies: 
+    # Comma-separated list of the package managers dependabot should update
+    package_managers: # default is bundler, npm_and_yarn
+    # Branch dependabot runs against
+    branch: # default is master
+    # Directory where the project lives
+    directory: # default is /
+    # The user to create the pull request
+    username: # default is x-access-token
+    # Access token with permission to create the pull request
+    token: 
+    # Bundler version to use
+    bundler_version: # optional, default is 2.0.2
+    # Dependabot version to use
+    dependabot_version: # optional, default is 0.117.5
