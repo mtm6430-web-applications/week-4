@@ -1,4 +1,4 @@
-name: dependabot-bump-together-action
+- name: dependabot-bump-together-action
   # You may pin to the exact commit or the version.
   # uses: marcoroth/dependabot-bump-together-action@ab726ae3405ac60706b35fd8659da2ed009383b6
   uses: marcoroth/dependabot-bump-together-action@v0.2.0
